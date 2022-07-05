@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài Tập DOM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <div class="dom-menu">
+        <ul>
+            <li class="active">
+                <a href="#b1" class=""><i class="fa-solid fa-book"></i> Bài 1</a>
+            </li>
+            <li>
+                <a href="#b2"><i class="fa-solid fa-book"></i> Bài 2</a>
+            </li>
+            <li>
+                <a href="#b3"><i class="fa-solid fa-book"></i> Bài 3</a>
+            </li>
+            <li>
+                <a href="#b4"><i class="fa-solid fa-book"></i> Bài 4</a>
+            </li>
+            <li>
+                <a href="#b5"><i class="fa-solid fa-book"></i> Bài 5</a>
+            </li>
+        </ul>
+    </div>
+    <section class="py-5" id="b1">
+        <div class="right-item py-4 pl-5">
+            <div class="item-1" id="b1">
+                <h2 class="title mb-3">Tính Tiền Lương Nhân Viên</h2>
+                <form>
+                    <input type="number" id="money" min="1" placeholder="Nhập Lương 1 Ngày" />
+                    <input type="number" id="day" min="1" placeholder="Số Ngày Làm" />
+                    <br />
+                    <button type="button" id="sum" class="mt-4">Tính Lương</button>
+                </form>
+                <p id="text1" class="mt-4 text"><i class="fa-solid fa-right-long"></i></p>
+            </div>
+        </div>
+    </section>
+    <section class="py-5" id="b2">
+        <div class="right-item py-4 pl-5">
+            <div class="item-1" id="b1">
+                <h2 class="title mb-3"> Tính Giá Trị Trung Bình</h2>
+                <form>
+                    <input type="number" id="number1" min="1" placeholder="Nhập Số Thứ 1" />
+                    <input type="number" id="number2" min="1" placeholder="Nhập Số Thứ 2" />
+                    <input type="number" id="number3" min="1" placeholder="Nhập Số Thứ 3" />
+                    <input type="number" id="number4" min="1" placeholder="Nhập Số Thứ 4" />
+                    <input type="number" id="number5" min="1" placeholder="Nhập Số Thứ 5" />
+
+                    <br />
+                    <button type="button" id="sumAverage" class="mt-4">Tính Trung Bình</button>
+                    <form>
+                        <p id="text2" class="mt-4 text"><i class="fa-solid fa-right-long"></i></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5" id="b3">
+        <div class="right-item py-4 pl-5">
+            <div class="item-1" id="b1">
+                <h2 class="title mb-3">Quy Đổi Tiền</h2>
+                <form>
+                    <input type="number" id="vnd" min="1" placeholder="Nhập Số Tiền USD" />
+                    <br />
+                    <button type="button" id="currencyExchange" class="mt-4">Quy Đổi Tiền</button>
+                    <form>
+                        <p id="text3" class="mt-4 text"><i class="fa-solid fa-right-long"></i></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5" id="b4">
+        <div class="right-item py-4 pl-5">
+            <div class="item-1" id="b1">
+                <h2 class="title mb-3">Tính Diện Tích Hình Chữ Nhật</h2>
+                <form>
+                    <input type="number" id="widthRectangle" min="1" placeholder="Nhập Chiều Dài" />
+                    <input type="number" id="heightRectangle" min="1" placeholder="Nhập Chiều Rộng" />
+                    <br />
+                    <button type="button" id="sumRectangle" class="mt-4">Tính</button>
+                    <form>
+                        <p id="text4" class="mt-4 text"><i class="fa-solid fa-right-long"></i></p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-5" id="b5">
+        <div class="right-item py-4 pl-5">
+            <div class="item-1" id="b1">
+                <h2 class="title mb-3">Tính Tổng 2 Ký Số</h2>
+                <form>
+                    <input class="input5" type="number" id="number" min="1" max="99" placeholder="Nhập Số Có 2 Số" />
+                    <br />
+                    <button type="button" id="sumTwo" class="mt-4">Tính Tổng 2 Số</button>
+                    <form>
+                        <p id="text5" class="mt-4 text"><i class="fa-solid fa-right-long"></i></p>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
